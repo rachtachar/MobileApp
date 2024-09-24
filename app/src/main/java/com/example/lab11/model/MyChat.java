@@ -5,15 +5,13 @@ public class MyChat {
     private int friend_id;
     private String friend_image;
     private String friend_name;
-    private String food_nutrient;
-    private int friend_tel;
-    private String food_spicy;
-    private String food_type;
+    private String friend_dob;
+    private String friend_tel;
 
-    public int getFriend_tel() {
+    public String getFriend_tel() {
         return friend_tel;
     }
-    public void setFriend_tel(int friend_tel) {
+    public void setFriend_tel(String friend_tel) {
         this.friend_tel = friend_tel;
     }
 
@@ -29,5 +27,11 @@ public class MyChat {
     }
     public  void  setFriend_name(String friend_name){
         this.friend_name = friend_name;
+    }
+    public String getFriend_dob() {
+        return friend_dob;
+    }
+    public void setFriend_dob(String friend_dob) {
+        this.friend_dob = friend_dob;
     }
 }

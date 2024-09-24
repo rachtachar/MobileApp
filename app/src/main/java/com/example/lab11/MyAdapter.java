@@ -28,7 +28,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder { // Extend ViewHolder from androidx
         public ImageView imgView;
         public TextView txtHeader;
-        public TextView txtFooter;
+        public TextView txtFooter,txtThirdLine;
         public View layout;
 
         public ViewHolder(View v) {
@@ -37,6 +37,8 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             imgView = v.findViewById(R.id.icon);
             txtHeader = v.findViewById(R.id.firstLine);
             txtFooter = v.findViewById(R.id.secondLine);
+            txtThirdLine= v.findViewById(R.id.thirdline);
+
         }
     }
 
@@ -53,7 +55,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         final MyChat chat = values.get(position);
         holder.txtHeader.setText(chat.getFriend_name());
         holder.txtFooter.setText("เบอร์:" + chat.getFriend_tel());
-
+        holder.txtThirdLine.setText("กดที่รูปเพื่อดูรายละเอียด");
         Glide.with(context)
                 .load(chat.getFriend_image())
                 .into(holder.imgView);
@@ -63,6 +65,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
             intent.putExtra("name", chat.getFriend_name());
             intent.putExtra("img", chat.getFriend_image());
             intent.putExtra("tel", chat.getFriend_tel());
+            intent.putExtra("dob", chat.getFriend_dob());
             context.startActivity(intent);
         });
     }

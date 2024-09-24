@@ -14,16 +14,6 @@
         android:contentDescription="TODO" />
 
     <TextView
-        android:id="@+id/secondLine"
-        android:layout_width="fill_parent"
-        android:layout_height="77dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@id/icon"
-        android:text="Description"
-        android:textSize="24dp" />
-
-    <TextView
         android:id="@+id/firstLine"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -34,7 +24,36 @@
         android:layout_toRightOf="@id/icon"
         android:gravity="center_vertical"
         android:text="Example application"
-        android:textStyle="bold"
-        android:textSize="34sp" />
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="189dp"
+        android:layout_height="87dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/thirdline"
+        android:layout_width="196dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="-3dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="Description"
+        android:textColor="#4F75FF"
+        android:textSize="14dp" />
 
 </RelativeLayout>
