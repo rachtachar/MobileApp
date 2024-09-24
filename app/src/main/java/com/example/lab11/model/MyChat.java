@@ -13,7 +13,6 @@ public class MyChat {
     public int getFriend_tel() {
         return friend_tel;
     }
-
     public void setFriend_tel(int friend_tel) {
         this.friend_tel = friend_tel;
     }
@@ -21,10 +20,10 @@ public class MyChat {
     public String getFriend_image() {
         return friend_image;
     }
-
     public void setFriend_image(String friend_image) {
         this.friend_image = friend_image;
     }
+
     public String getFriend_name(){
         return friend_name;
     }
